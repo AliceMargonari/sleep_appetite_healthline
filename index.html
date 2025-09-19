@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>6 Ways Sleep May Help You Lose Weight - Healthline</title>
+  <link href="https://fonts.googleapis.com/css2?family=Georgia&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      margin: 0;
+      padding: 40px;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: #ffffff;
+      color: #111;
+    }
+    .logo {
+      text-align: left;
+      margin-bottom: 2px;
+    }
+    .logo img {
+      max-width: 30%;
+      height: auto;
+    }
+    h1 {
+      font-size: 30px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .meta {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 30px;
+    }
+    .subhead {
+      font-weight: bold;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+    p {
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+    .share-link {
+      color: #326891;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="logo">
+    <img src="healthline-logo.png" alt="Healthline">
+  </div>
+  <br>
+  <br>
+  <h1>6 Ways Sleep May Help You Lose Weight</h1>
+
+<br>
+<br>
+<p>The amount of sleep you get may be just as important for weight loss as your diet and exercise. Evidence shows that sleep may be the missing factor for many people trying to lose weight. </p>
+<p> Sleep has a wide range of benefits on physical and mental well-being, but a lesser-known benefit is its support in maintaining a moderate weight. </p>
+<p> Here are <b> six reasons why getting enough sleep may help you lose weight. </b> </p>
+<br>
+<p> <b> May help you avoid weight gain associated with short sleep. </b> Studies have found that poor sleep is associated with weight gain and a higher likelihood of obesity in both adults and children. </p>
+
+<p> <b>May help moderate your appetite. </b> <Many experts have claimed that poor sleep may increase appetite, likely due to its effect on hormones that signal hunger and fullness.  </p>
+
+<p> <b>May help you make better food choices. </b> For example, a 2019 study has found that poor sleep can decrease your self-control and decision making abilities, as well as increase your brain’s reaction to food. Poor sleep has also been linked to an increased intake of foods high in calories, fats, and sugar.</p>
+
+<p> <b> Sleeping early can prevent late-night snacking. </b> Poor sleep can increase your calorie intake by increasing late-night snacking, portion sizes, and the time available to eat. </p>
+
+<p> <b> Potential benefits for your metabolism. </b> A 2020 research has shown that poor sleep may affect your metabolism and your body’s ability to break down fat cells into energy.</p>
+
+<p> <b>Sleep can enhance physical activity. </b> Numerous studies have shown that getting enough sleep may increase your motivation to be more active and enhance your athletic performance, both of which can contribute to weight loss. Interestingly, being physically active can also improve your sleep. </p>
+<br>
+<p> <b>Takeaway </b> </p>
+<p> If you’re trying to lose weight, not getting enough sleep can make it more challenging. A lack of sleep is linked to less nutritious food choices, increased hunger and calorie intake, decreased physical activity, and ultimately, weight gain. </p>
+<p> If your weight-loss efforts aren’t producing results, it could be helpful to examine your sleep habits. Though individual needs vary, most adults need around 7 to 9 hours of sleep per night. Getting some much-needed rest may make all the difference in helping you with your weight loss goals. </p>
+
+  <br>
+  <p style="text-transform: uppercase; color: blue; margin-bottom: 30px;">
+  You may now close this tab and return to the survey  
+  </p>
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const prolific_pid = params.get("prolific_pid");
+  const condition = params.get("condition");
+  const page_name = params.get("page_name");
+
+  // Replace visible URL to hide condition and page_name
+  if (prolific_pid) {
+    const cleanUrl = window.location.origin + window.location.pathname + "?prolific_pid=" + encodeURIComponent(prolific_pid);
+    window.history.replaceState({}, document.title, cleanUrl);
+  }
+
+  const entryTime = new Date();
+
+  const entryIds = {
+    prolific_pid: "entry.434492044",
+    condition: "entry.1225575535",
+    page_name: "entry.925161350",
+    entry_time: "entry.732388184",
+    exit_time: "entry.372350073",
+    time_spent: "entry.298480214"
+  };
+
+  window.addEventListener("unload", function () {
+    const exitTime = new Date();
+    const timeSpent = Math.round((exitTime - entryTime) / 1000);
+
+    const formData = new FormData();
+    formData.append(entryIds.prolific_pid, prolific_pid);
+    formData.append(entryIds.condition, condition);
+    formData.append(entryIds.page_name, page_name);
+    formData.append(entryIds.entry_time, entryTime.toISOString());
+    formData.append(entryIds.exit_time, exitTime.toISOString());
+    formData.append(entryIds.time_spent, timeSpent);
+
+    navigator.sendBeacon(
+      "https://docs.google.com/forms/d/e/1FAIpQLSfPfKcw2oVlFINPNThg4q0FgfVdxxCCLn40vwPY6nXEH2ybeQ/formResponse",
+      new URLSearchParams(formData)
+    );
+  });
+</script>
+
+
+</body>
+</html>
